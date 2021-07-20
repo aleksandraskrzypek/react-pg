@@ -11,7 +11,7 @@ function App() {
       <div className="logo">
         <p>ToDo-List</p>
       </div>
-      <Router>
+      <Router basename={window.location.pathname || ''}>
         <Switch>
           <Route exact path='/' component={Login} />
           <Route exact path='/newAccount' component={NewAccount} />
